@@ -102,7 +102,7 @@ public class User implements UserDetails{
         this.authorities = authorities;
     }
 
-    @Override
+	@Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return this.authorities;
     }
@@ -144,12 +144,12 @@ public class User implements UserDetails{
     	return sb.toString();
     }
 
-	@Override
+    @Override
 	public boolean isEnabled() {
 		return active;
 	}
 
-	@Override
+    @Override
 	public String getUsername() {
 		return email;
 	}
